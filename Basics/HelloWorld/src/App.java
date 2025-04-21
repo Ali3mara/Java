@@ -77,9 +77,9 @@ public class App {
         } catch (ArithmeticException e) {
             System.out.println("Cannot divide by zero!");
         } finally {
-            System.out.println("This will always be pr");
+            System.out.println("This will always be printed");
         }
-        ExceptionHandling;
+        System.out.println("File path: /c:/Users/workstation/Documents/Java/Basics/HelloWorld/src/ExceptionHandling.java");
 
         // Type Casting
         double d = 9.78;
