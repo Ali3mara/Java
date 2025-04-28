@@ -19,7 +19,7 @@ public class Main {
             System.out.print("Enter your choice: ");
 
             // Get user input
-            while (!scanner.hasNextInt()) { //explain this line why !scanner.hasNextInt() is used
+            while (!scanner.hasNextInt()) { 
                 System.out.println("Invalid input. Please enter a number between 0 and 6:");
                 scanner.next(); // clear invalid input
             }
@@ -59,7 +59,6 @@ public class Main {
     // Feature 1: Basic Calculator
     public static void basicCalculator(Scanner scanner) {
         System.out.println("[Basic Calculator feature here]");
-        int tet = nextInt(scanner, "Enter first number: ");
     }
 
     // Feature 2: Number Guessing Game
