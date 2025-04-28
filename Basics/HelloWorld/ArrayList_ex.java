@@ -16,6 +16,10 @@ public class ArrayList_ex {
         int firstElement = numbers.get(0);
         System.out.println("First element: " + firstElement);
 
+        // Change an element in the ArrayList
+        numbers.set(0, 15); // Changes the element at index 0 to 15
+        System.out.println("After change: " + numbers);
+
         // Remove an element from the ArrayList
         numbers.remove(1); // Removes the element at index 1 (20)
         System.out.println("After removal: " + numbers);
