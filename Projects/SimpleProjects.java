@@ -1,3 +1,4 @@
+package Projects;
 import java.util.Scanner;
 public class SimpleProjects {
     static Scanner scanner = new Scanner(System.in); //NEED UNDERSTANDING

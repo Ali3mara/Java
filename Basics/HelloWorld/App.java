@@ -1,3 +1,4 @@
+package Basics.HelloWorld;
 import java.util.Scanner;
 
 public class App {
