@@ -58,7 +58,33 @@ public class Main {
 
     // Feature 1: Basic Calculator
     public static void basicCalculator(Scanner scanner) {
-        System.out.println("[Basic Calculator feature here]");
+        System.out.println("Welcome to the Basic Calculator!");
+        System.out.println("You can perform basic operations: +, -, *, /");
+        System.out.print("Enter first number: ");
+        double num1 = scanner.nextDouble();
+        System.out.print("Enter second number: ");
+        double num2 = scanner.nextDouble();
+        System.out.print("Enter an operator (+, -, *, /): ");
+        // Use next() to read the operator as a string and then charAt(0) to get the first character
+        char operator = scanner.next().charAt(0);
+
+        switch (operator) {
+            case '+':
+                System.out.println("Result: " + (num1 + num2));
+                break;
+            case '-':
+                System.out.println("Result: " + (num1 - num2));
+                break;
+            case '*':
+                System.out.println("Result: " + (num1 * num2));
+                break;
+            case '/':
+                System.out.println("Result: " + (num1 / num2));
+                break;
+            default:
+                System.out.println("Invalid operator. Please use +, -, *, or /.");
+                break;
+        }
     }
 
     // Feature 2: Number Guessing Game
