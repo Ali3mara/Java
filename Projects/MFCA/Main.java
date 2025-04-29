@@ -58,16 +58,17 @@ public class Main {
 
     // Feature 1: Basic Calculator
     public static void basicCalculator(Scanner scanner) {
-        System.out.println("Welcome to the Basic Calculator!");
+        // Display calculator instructions
+        System.out.println("\n=== Basic Calculator ===");
         System.out.println("You can perform basic operations: +, -, *, /");
         System.out.print("Enter first number: ");
         double num1 = scanner.nextDouble();
         System.out.print("Enter second number: ");
         double num2 = scanner.nextDouble();
         System.out.print("Enter an operator (+, -, *, /): ");
-        // Use next() to read the operator as a string and then charAt(0) to get the first character
         char operator = scanner.next().charAt(0);
 
+        // Perform calculation based on the operator
         switch (operator) {
             case '+':
                 System.out.println("Result: " + (num1 + num2));
@@ -84,6 +85,23 @@ public class Main {
             default:
                 System.out.println("Invalid operator. Please use +, -, *, or /.");
                 break;
+        }
+
+        // Waiting some times before getting into the new line
+        try {
+            Thread.sleep(3000); // Sleep for 3 seconds
+        } catch (InterruptedException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+
+        // Ask user if they want to continue or exit
+        System.out.println("Choose the following: \n 1. Continue \n 2. Exit");
+        System.out.print("Enter your chooice: ");
+        int choice = scanner.nextInt();
+        if (choice == 1) {
+            basicCalculator(scanner); // Call the method again for another calculation
+        } else {
+            System.out.println("Exiting the calculator. Goodbye!");
         }
     }
 
