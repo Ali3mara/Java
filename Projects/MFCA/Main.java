@@ -87,9 +87,10 @@ public class Main {
                 break;
         }
 
-        // Waiting some times before getting into the new line
+        // Waiting some times for the user to see the result
+        System.out.println("Waiting for 5 seconds to see the result...");
         try {
-            Thread.sleep(3000); // Sleep for 3 seconds
+            Thread.sleep(5000); // Sleep for 3 seconds
         } catch (InterruptedException e) {
             System.out.println("Error: " + e.getMessage());
         }
@@ -107,7 +108,49 @@ public class Main {
 
     // Feature 2: Number Guessing Game
     public static void numberGuessingGame(Scanner scanner) {
-        System.out.println("[Number Guessing Game feature here]");
+        // Display game instructions
+        System.out.println("\n=== Number Guessing Game ===");
+        int randomNumber = (int) (Math.random() * 100) + 1; //NEW FOR ME
+        int user = 0;
+        int attempts = 0;
+        System.out.println("Guess a number between 1 and 100: ");
+
+        // Loop until the user guesses the correct number
+        while (user != randomNumber){
+            while (!scanner.hasNextInt()) {
+                System.out.println("Invalid input. Please enter a number between 1 and 100:");
+                scanner.next();
+            }
+            user = scanner.nextInt();
+            attempts++;
+            if(user < 1 || user > 100) {
+                System.out.println("Please enter a number between 1 and 100.");
+            } else if (user > randomNumber) {
+                System.out.println("Lower!!! ");
+            } else if (user < randomNumber) {
+                System.out.println("Higher!!! ");
+            } else{
+                System.out.println("You guessed the number " + randomNumber + " in " + attempts + " attempts.");
+            }
+        }
+
+        // Waiting some times for the user to see the result
+        System.out.println("Waiting for 5 seconds to see the result...");
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+
+        // Ask user if they want to continue or exit
+        System.out.println("Choose the following: \n 1. Continue \n 2. Exit");
+        System.out.print("Enter your choice: ");
+        int choice = scanner.nextInt();
+        if (choice == 1) {
+            numberGuessingGame(scanner); // Call the method again for another game
+        } else {
+            System.out.println("Exiting the game. Goodbye!");
+        }
     }
 
     // Feature 3: Student Grades Manager
