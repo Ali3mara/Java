@@ -1,4 +1,4 @@
-package Basics.HelloWorld;
+package Basics;
 import java.util.ArrayList;
 public class ArrayList_ex {
     public static void main(String[] args) {
