@@ -1,13 +1,20 @@
 class Shape {
-    int width;
-    int height;
+    double width;
+    double height;
+    double radius;
 
-    public Shape(int width, int height){
+    public Shape(double width, double height){
         this.width = width;
         this.height = height;
     }
 
-    public void getArea() {
-        System.out.println(width * height);
+    public Shape(double radius) {
+        this.radius = radius;
+    }
+
+
+
+    public double getArea() {
+        return 1;
     }
 }

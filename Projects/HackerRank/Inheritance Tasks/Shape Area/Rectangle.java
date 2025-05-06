@@ -4,8 +4,8 @@ class Rectangle extends Shape {
     }
 
     @Override
-    public void getArea() {
-        System.out.println(width * height);
+    public double getArea() {
+        return width*height;
     }
     
 }
