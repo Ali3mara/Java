@@ -1,0 +1,97 @@
+[33mcommit 7ff86194fe7bca6f170a5933e3ffc9e328088c0b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: ali3mara <aliemara2006@gmail.com>
+Date:   Tue May 6 22:17:25 2025 +0300
+
+    UPDATED BANK {display} (HackerRank)
+
+[33mcommit f32a63b3caa5365b32c5daf9d854e583b0ca0b5c[m
+Author: ali3mara <aliemara2006@gmail.com>
+Date:   Tue May 6 17:31:36 2025 +0300
+
+    UPDATED SHAPE AREA {ADDED CIRCLE} (HackerRank)
+
+[33mcommit ee01d4726d0e0d79cbec12f280a56c2d945a85be[m
+Author: ali3mara <aliemara2006@gmail.com>
+Date:   Tue May 6 01:54:57 2025 +0300
+
+    EmpName (HackerRank)
+
+[33mcommit 9647669120873199a2a903f0b98478ffef2f829a[m
+Author: ali3mara <aliemara2006@gmail.com>
+Date:   Tue May 6 01:14:56 2025 +0300
+
+    Shape Area (HackerRank)
+
+[33mcommit 19798e13d9e032171430b0daae17b8788abc273b[m
+Author: ali3mara <aliemara2006@gmail.com>
+Date:   Thu May 1 03:04:48 2025 +0300
+
+    Learned Inheritance (OOP), Fix package files error (Basics)
+
+[33mcommit 68788cab2e4e4de3f2dff7fa1fb2503c846c1e77[m
+Author: ali3mara <aliemara2006@gmail.com>
+Date:   Wed Apr 30 21:59:04 2025 +0300
+
+    Just removed the basics files from HelloWorld folder and deleted HelloWorld folder + clean start to learn basics (PUASE MFCA)
+
+[33mcommit eaa1758be57460461ce132af427dab032bbe77ef[m
+Author: ali3mara <aliemara2006@gmail.com>
+Date:   Wed Apr 30 02:35:33 2025 +0300
+
+    Added Number Guessing Game with Input Validation
+    
+    - Used Math.random() to generate a random number between 1 and 100.
+    - Implemented a repeated guessing loop with attempt tracking.
+    - Added scanner.hasNextInt() to handle non-numeric input gracefully.
+    - Checked for out-of-range values (1 to 100) and provided appropriate feedback.
+    - Included feedback for guesses (higher/lower) and a success message upon correct guess.
+    - Added a delay using Thread.sleep(5000) to allow users to see the result.
+    - Provided an option to continue or exit the game via user input.
+
+[33mcommit eb6e1598970d845fa6c42a3c1151cb79b2a6d216[m
+Author: ali3mara <aliemara2006@gmail.com>
+Date:   Tue Apr 29 17:31:53 2025 +0300
+
+    Renamed and edited ErrorHandling java file for learning, Added some updates in Basic Calculator (MFCA) {added user-friendly calculator with repeat option, operator switch, and delay}
+
+[33mcommit afb6488cf5a695b9d4b5002a06aefa37d595e2e7[m
+Author: ali3mara <aliemara2006@gmail.com>
+Date:   Tue Apr 29 03:38:33 2025 +0300
+
+    Basic Calculator V1
+
+[33mcommit e238fbd9d6a5249f3ff9d647d160f4ed0ea75947[m
+Author: ali3mara <aliemara2006@gmail.com>
+Date:   Tue Apr 29 02:32:20 2025 +0300
+
+    IDK if Main.java ws save lol
+
+[33mcommit 6e7a099dce1e45ed66cdf6b866384b685bc28103[m
+Author: ali3mara <aliemara2006@gmail.com>
+Date:   Tue Apr 29 02:24:51 2025 +0300
+
+    Changed project name to MFCA (same meaning btw) and Implement menu system in Main.java
+
+[33mcommit d6958c8f9b7d55c32770572ed68033dc2296db7a[m
+Author: ali3mara <aliemara2006@gmail.com>
+Date:   Tue Apr 29 01:55:22 2025 +0300
+
+    Orgnized basics folder, Placed SimpleProject file into project folder, Added MuiltiFunctionalConsoleApp for all java basics project (Practise and getting ready for OOP! (just file and folder)
+
+[33mcommit 09b5803da4eb9b7c6baf34c6ff23fd60dfaf250b[m
+Author: ali3mara <aliemara2006@gmail.com>
+Date:   Mon Apr 21 17:04:16 2025 +0200
+
+    Learned about ArrayLists
+
+[33mcommit 6dc25f27637ad59d18964e984e96806b0a44d78a[m
+Author: ali3mara <aliemara2006@gmail.com>
+Date:   Mon Apr 21 13:43:22 2025 +0200
+
+    Made a simple calclator in SimpleProject file
+
+[33mcommit 7551726bcb3faa70e4f6690f8384351139a4765d[m
+Author: ali3mara <aliemara2006@gmail.com>
+Date:   Sun Apr 20 11:57:51 2025 +0200
+
+    Initial commit with Java files
