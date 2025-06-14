@@ -87,20 +87,14 @@ public class Main {
                 break;
         }
 
-        // Waiting some times for the user to see the result
-        System.out.println("Waiting for 5 seconds to see the result...");
-        try {
-            Thread.sleep(5000); // Sleep for 3 seconds
-        } catch (InterruptedException e) {
-            System.out.println("Error: " + e.getMessage());
-        }
+        waiting();
 
-        // Ask user if they want to continue or exit
+        // Ask user if they want to continue  or exit
         System.out.println("Choose the following: \n 1. Continue \n 2. Exit");
         System.out.print("Enter your chooice: ");
         int choice = scanner.nextInt();
         if (choice == 1) {
-            basicCalculator(scanner); // Call the method again for another calculation
+            basicCalculator(scanner); // Call the method again for another calculation (this is called recursion)
         } else {
             System.out.println("Exiting the calculator. Goodbye!");
         }
@@ -110,19 +104,22 @@ public class Main {
     public static void numberGuessingGame(Scanner scanner) {
         // Display game instructions
         System.out.println("\n=== Number Guessing Game ===");
-        int randomNumber = (int) (Math.random() * 100) + 1; //NEW FOR ME
+        int randomNumber = (int) (Math.random() * 100) + 1; // Generate a random number between 1 and 100
         int user = 0;
         int attempts = 0;
         System.out.println("Guess a number between 1 and 100: ");
 
         // Loop until the user guesses the correct number
-        while (user != randomNumber){
-            while (!scanner.hasNextInt()) {
+        boolean status = true;
+        while (status){
+            while (!scanner.hasNextInt()) { //Wont pass if the input is not an integer
                 System.out.println("Invalid input. Please enter a number between 1 and 100:");
                 scanner.next();
             }
             user = scanner.nextInt();
             attempts++;
+
+            // Check if the user input is within the valid range, higher or lower than the random number, or correct
             if(user < 1 || user > 100) {
                 System.out.println("Please enter a number between 1 and 100.");
             } else if (user > randomNumber) {
@@ -131,16 +128,11 @@ public class Main {
                 System.out.println("Higher!!! ");
             } else{
                 System.out.println("You guessed the number " + randomNumber + " in " + attempts + " attempts.");
+                status = false; // Exit the loop when the user guesses correctly
             }
         }
 
-        // Waiting some times for the user to see the result
-        System.out.println("Waiting for 5 seconds to see the result...");
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            System.out.println("Error: " + e.getMessage());
-        }
+        waiting();
 
         // Ask user if they want to continue or exit
         System.out.println("Choose the following: \n 1. Continue \n 2. Exit");
@@ -171,5 +163,16 @@ public class Main {
     // Feature 6: Palindrome Checker
     public static void palindromeChecker(Scanner scanner) {
         System.out.println("[Palindrome Checker feature here]");
+    }
+
+
+    // Method to wait for 5 seconds to let the user see the result
+    public static void waiting(){
+        System.out.println("Waiting for 5 seconds to see the result...");
+        try {
+            Thread.sleep(5000); // Sleep for 5 seconds
+        } catch (InterruptedException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
     }
 }
